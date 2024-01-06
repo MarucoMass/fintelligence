@@ -83,7 +83,15 @@ function showIframe(button) {
     document.querySelector(".bg-menu").classList.toggle("active");
   }
 
+  // document.querySelectorAll(".header__content--ul li a").addEventListener("click", () => {
+  //   if (document.querySelector(".header__content--btn").classList.contains(".active")) {
+  //     document.querySelector(".header__content--btn").classList.toggle("active");
+  //     document.querySelector(".header__content--ul").classList.toggle("active");
+  //     document.querySelector(".bg-menu").classList.toggle("active");
+  //   }
+  // })
+
   document.addEventListener("scroll", () => {
     scroll = window.scrollY;
-    scroll > 10 ? document.querySelector("#header").classList.add("bg-header") : document.querySelector(".header").classList.remove("bg-header")
+    scroll > 50 ? document.querySelector("#header").classList.add("active") : document.querySelector(".header").classList.remove("active")
   })
