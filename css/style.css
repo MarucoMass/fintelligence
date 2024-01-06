@@ -27,8 +27,8 @@
 }
 body, input, textarea{
     font-family: 'Saira', sans-serif;
-    position: relative;
 }
+body {overflow-x: hidden;}
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -170,7 +170,23 @@ a{text-decoration: none;}
   .carusel__container > .swiper-button-next{right: -4%;}
   .carusel__container > .swiper-button-prev{left: -4%;}
 
+  main {
+    position: relative;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+main.bg-dark::after{
+    position: absolute;
+    inset: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: block;
+    z-index: 1;
+  }
 /*///////   header    ////////*/ 
+
 .header{
     width: 100%;
     height: 8svh;
@@ -535,12 +551,12 @@ input:placeholder-shown{
 }
 @media (max-width: 575.98px) { 
     :root{
-        --fs-title: 1.55rem;
-        --fs-subtitle: 1.5rem;
-        --fs-terciary-title: 1.5rem;
+        --fs-title: 1.95rem;
+        --fs-subtitle: 1.75rem;
+        --fs-terciary-title: 1.55rem;
         --fs-main-paragraph: 1.125rem;
-        --fs-secondary-paragraph: 1rem;
-        --fs-terciary-paragraph: .75rem;
+        --fs-secondary-paragraph: 1.1rem;
+        --fs-terciary-paragraph: 1rem;
     }
     #hero__btn, #asesoria a{
         font-size: 1rem;

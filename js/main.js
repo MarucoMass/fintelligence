@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   loadIframes(); // Cargar iframes al hacer scroll
   animateNumbers(); // Animar números al hacer scroll
 });
+
 function showIframe(button) {
     var iframe = button.nextElementSibling; 
     var iframeSrc = iframe.getAttribute("src");
@@ -77,21 +78,4 @@ function showIframe(button) {
    }
 
 
-   function menuOnClick() {
-    document.querySelector(".header__content--btn").classList.toggle("active");
-    document.querySelector(".header__content--ul").classList.toggle("active");
-    document.querySelector(".bg-menu").classList.toggle("active");
-  }
-
-  // document.querySelectorAll(".header__content--ul li a").addEventListener("click", () => {
-  //   if (document.querySelector(".header__content--btn").classList.contains(".active")) {
-  //     document.querySelector(".header__content--btn").classList.toggle("active");
-  //     document.querySelector(".header__content--ul").classList.toggle("active");
-  //     document.querySelector(".bg-menu").classList.toggle("active");
-  //   }
-  // })
-
-  document.addEventListener("scroll", () => {
-    scroll = window.scrollY;
-    scroll > 50 ? document.querySelector("#header").classList.add("active") : document.querySelector(".header").classList.remove("active")
-  })
+   
