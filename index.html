@@ -40,7 +40,7 @@
                 <div class="hero__content grid-column">
                     <h1>Mejoramos las finanzas <br>y gestión de tu negocio,<br><span>garantizamos su viabilidad.</span></h1>
                     <p class="paragraph">Convierte los datos en una ventaja competitiva, orientando tu empresa hacia un futuro lleno de decisiones acertadas y estrategias proactivas.</p>
-                    <span>
+                    <span class="flex hero__cta">
                         <a href="https://calendly.com/max-hxq" class="btn" id="hero__btn">Agendemos <br>una reunión</a>
                         <span class="finger"><i class="fa-regular fa-hand-point-left"></i></span>
                     </span>
@@ -62,12 +62,24 @@
                 </div>
             </div>
         </section>
-
+<!-- 
         <section class="" id="marquee">
             <span class="marquee__box">
                 98,9% SATISFACCIÓN USUARIA | 6K + CLIENTES
             </span>
-        </section>
+        </section> -->
+
+        <div class="scroller" id="marquee" data-speed="fast">
+            <ul class="tag-list scroller__inner">
+              <li>98,9%</li>
+              <li>SATISFACCIÓN</li>
+              <li>USUARIA</li>
+              <li>|</li>
+              <li>6K</li>
+              <li>+</li>
+              <li>CLIENTES.&nbsp</li>
+            </ul>
+          </div>
 
         <section class="medium-height flex" id="form">
             <div class="form__content container grid">
@@ -266,6 +278,7 @@
 
         <!-- Scripts -->
         <script src="./js/header.js"></script>
+        <script src="./js/scroller.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/footer.js"></script>
 

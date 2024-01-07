@@ -41,7 +41,7 @@ function showIframe(button) {
            const targetNumber = entry.target.getAttribute('data-target');
            const counterElement = entry.target.querySelector('span');
            const startNumber = 0;
-           const duration = 6000; // Milliseconds for the animation
+           const duration = 4000; // Milliseconds for the animation
 
            animateCount(startNumber, targetNumber, counterElement, duration);
            observer.unobserve(entry.target);
@@ -77,5 +77,5 @@ function showIframe(button) {
      return t * (2 - t);
    }
 
-
+  
    
