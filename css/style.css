@@ -30,7 +30,7 @@ body, input, textarea{
 }
 html{
     scroll-behavior: smooth;
-    /* scroll-padding-top: 5rem; */
+    scroll-padding-top: 3rem;
 }
 h1 { font-size: var(--fs-title); text-wrap: wrap;}
 h2 {
@@ -172,7 +172,6 @@ a{text-decoration: none;}
   main {
     position: relative;
     width: 100%;
-    /* overflow-x: hidden; */
 }
   main.bg-dark {
     overflow-x: hidden;
@@ -239,7 +238,6 @@ main.bg-dark::after{
     transform: translate(-50%, -50%) scale(0); /* Inicialmente oculto y a escala 0 */
     transition: transform 0.5s ease;
     z-index: -1; 
-    /* box-shadow: 0px 1px 40px var(--secondary-white); */
 }
 .bg-menu.active {
     transform: translate(-50%, -50%) scale(1); /* Al hacer hover, muestra y escala a 1 */
@@ -322,7 +320,7 @@ main.bg-dark::after{
     padding-inline: 30px;
 }
 @keyframes marquee {
-    0%{transform: translateX(0%);}
+    0%{transform: translateX(100%);}
     100%{transform: translateX(-100%);}
 }
 /*///////   form     ////////*/ 
@@ -418,11 +416,9 @@ input:placeholder-shown{
 }
 .alliance__box h3::before {
     right: 100%; 
-    /* margin-right: 10%;  */
 }
 .alliance__box h3::after {
     left: 100%; 
-    /* margin-left: 10%;  */
 }
  /*///////   asesoria    ////////*/ 
  #asesoria h2{max-width: 15ch;}
@@ -478,7 +474,6 @@ input:placeholder-shown{
     pointer-events: none;
     opacity: .2;
   }
-
   
   /* Media queries */
   
@@ -572,6 +567,6 @@ input:placeholder-shown{
  @media (reduced-prefers-motion: no-preference) {
     html {
         scroll-behavior: smooth;
-        /* scroll-padding-top: 3rem; */
+        scroll-padding-top: 3rem;
     }
  }
