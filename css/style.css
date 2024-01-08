@@ -186,6 +186,14 @@ main.bg-dark::after{
     display: block;
     z-index: 1;
   }
+  .wapp__link{
+    position: fixed;
+    bottom: 20%;
+    right: 2%;
+    max-width: 4rem;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px var(--primary-white));
+  }
 /*///////   header    ////////*/ 
 
 .header{
