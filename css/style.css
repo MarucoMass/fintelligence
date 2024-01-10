@@ -194,11 +194,14 @@ main.bg-dark::after{
   }
   .wapp__link{
     position: fixed;
-    bottom: 20%;
+    top: 88vh;
     right: 2%;
     max-width: 3rem;
     z-index: 10;
     filter: drop-shadow(0 0 5px var(--primary-white));
+  }
+  .btn:hover, a.btn:hover{
+    transform: scale(1.125);
   }
 /*///////   header    ////////*/ 
 
@@ -288,7 +291,7 @@ main.bg-dark::after{
 
 /*///////   Inicio     ////////*/ 
 #inicio{
-    background: url("../assets/Imagen\ Banner\ Principal.png")  50% 15%/cover no-repeat;
+    background: url("../assets/Imagen\ Banner\ Principal.webp")  50% 15%/cover no-repeat;
     padding-top: 8rem;
     padding-bottom: 2rem;
 }
@@ -432,7 +435,7 @@ input:placeholder-shown{
 }
 /*///////   somos    ////////*/ 
 #somos{
-    background: url("../assets/Foto\ Frase.png") center bottom/cover no-repeat;
+    background: url("../assets/Foto\ Frase.webp") center bottom/cover no-repeat;
     min-height: 65vh;
     min-height: 65svh;
     padding-block: 8rem;
@@ -455,6 +458,7 @@ input:placeholder-shown{
     row-gap: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;   
     justify-content: space-between;
+    border-radius: 8px;
 }
 #tarifas p {
     color: #9c9c9c;
@@ -477,10 +481,10 @@ input:placeholder-shown{
     text-align: right;
     font-size: 2.5rem;
 }
-.tarifas__box--precio h3 + span{
+.tarifas__box--precio h3 + .uf{
     font-size: 1rem;
     margin: 0;
-    margin-top: -.75rem;
+    margin-top: -1.05rem;
     font-weight: var(--fw-700);
 }
 .tarifas__box--precio p{
@@ -492,7 +496,7 @@ input:placeholder-shown{
     font-size: var(--fs-terciary-paragraph);
 }
 #dim{
-   font-size: 1rem !important;
+   font-size: 1.035rem !important;
    width: fit-content;
 }
 #dim2 {
@@ -501,10 +505,12 @@ input:placeholder-shown{
 #tarifas a {
     font-size: 1rem;
 }
-
+#tarifas img {
+    max-width: 200px;
+}
 /*///////   alliance   ////////*/ 
 .alliance__boxes{
-    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
     place-content: center;
     margin:10px 0px 35px;
 }
@@ -530,6 +536,11 @@ input:placeholder-shown{
     left: 100%; 
 }
 #alianzas__container h3{color: var(--primary-white);}
+
+.gtd{
+    max-width: 200px;
+    margin-top: 1.5rem;
+}
  /*///////   asesoria    ////////*/ 
  #asesoria h2{max-width: 15ch;}
  #asesoria p {max-width: 43ch;}
@@ -576,6 +587,13 @@ input:placeholder-shown{
     background-color: var(--primary-color);
     transition: all .2s linear;
     opacity: .9;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: var(--fw-900);
   }
   .previewButton:hover {opacity: 1;}
 
